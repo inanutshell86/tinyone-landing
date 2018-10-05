@@ -1,0 +1,34 @@
+{
+  "name": "tinyone-landing",
+  "version": "1.0.0",
+  "description": "Creating landing page using pug/scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inanutshell86/tinyone-landing.git"
+  },
+  "keywords": [
+    "pug",
+    "scss",
+    "bem",
+    "responsive"
+  ],
+  "author": "Ihor Khrystiuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inanutshell86/tinyone-landing/issues"
+  },
+  "homepage": "https://github.com/inanutshell86/tinyone-landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp.spritesmith": "^6.9.0",
+    "rimraf": "^2.6.2"
+  }
+}
