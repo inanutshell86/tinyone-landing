@@ -1,0 +1,52 @@
+.container
+  header.site-header
+    .site-header__top
+      .site-navigation
+        input#nav-toggle.site-navigation__checkbox(type="checkbox")
+        label.site-navigation__button(for="nav-toogle")
+          span.site-navigation__icon &nbsp;
+        nav.site-navigation__main-nav
+        - var items = ['Home', 'About us', 'Our Approach', 'Our Projects']
+          ul.site-navigation__list
+            each item in items
+              li.site-navigation__item
+                a.site-navigation__link(href="#")= item
+      .logo
+        img.logo__image(src="../../images/logo.png" alt="company logo")
+        span.logo__text tinyone
+      .social-items
+        a.social-link.social-link--fb(href="#") facebook
+          i.fab.fa-facebook-f
+        a.social-link.social-link--twitter(href="#") twitter
+          i.fab.fa-twitter
+        a.social-link.social-link--google(href="#") google plus
+          i.fab.fa-google-plus-g
+        a.social-link.social-link--pinterest(href="#") pinterest
+          i.fab.fa-pinterest
+    .site-header__bottom
+      h1.heading-primary Inspire your inspiration
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+      a.button(href="#") get start
+      a.scroll(href="#")
+        i.fas.fa-long-arrow-alt-down
+  section.features
+    h2.heading-secondary Tinyone features
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+    .features__item
+      h3.features__heading Fully Responsive
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+    .features__item
+      h3.features__heading Fully Layered PSD
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+    .features__item
+      h3.features__heading Font Awesome Icons
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+    .features__item
+      h3.features__heading HTML3 & CSS3
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+    .features__item
+      h3.features__heading Email Template
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
+    .features__item
+      h3.features__heading Free to download
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.
