@@ -1,0 +1,88 @@
+.team {
+  margin-bottom: 170px;
+  text-align: center;
+
+  &__image {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+    width: 235px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__figure {
+    margin-bottom: 41px;
+  }
+
+  &__heading {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  &__sub-heading {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-text-color;
+  }
+
+  &__sub-heading + p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #313841;
+  }
+
+  .social-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-link {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    transition: all 0.3s ease;
+  }
+
+  .social-link:hover::after {
+    color: #6b6b6b;
+  }
+
+  .social-link::after {
+    position: absolute;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    font-size: 22px;
+    color: $main-icon-color;
+  }
+
+  .social-link--facebook::after {
+    content: "\f39e";
+  }
+
+  .social-link--twitter::after {
+    content: "\f099";
+  }
+
+  .social-link--linkedin::after {
+    content: "\f0e1";
+  }
+}
