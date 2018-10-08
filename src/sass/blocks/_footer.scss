@@ -1,0 +1,74 @@
+.footer {
+  height: 770px;
+  background-color: $main-color;
+  text-align: center;
+
+  &__contact-list {
+    width: 300px;
+    padding-right: 115px;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  &__navigation {
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  &__list {
+    width: 160px;
+  }
+
+  &__link {
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__link:hover {
+    color: #6b6b6b;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .heading-secondary {
+    padding-top: 90px;
+    font-family: SourceSansProBold;
+    font-size: 32px;
+    line-height: 1;
+    color: #ffffff;
+  }
+
+  .heading-secondary + p {
+    max-width: 720px;
+    margin-bottom: 36px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .form {
+    margin-bottom: 105px;
+  }
+
+  .form__field {
+    width: 600px;
+    border: none;
+  }
+
+  .button--subscribe {
+    width: 135px;
+    height: 54px;
+    border: none;
+    background-color: #ffffff;
+    font-family: SourceSansProBold;
+    transition: all 0.3s ease;
+  }
+
+  .button--subscribe:hover {
+    background-color: darken(#ffffff, 10%);
+  }
+}
