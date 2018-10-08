@@ -1,0 +1,101 @@
+.portfolio {
+  margin-bottom: 200px;
+  text-align: center;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    width: 220px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__item:hover .bg-overlay {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__item:hover .portfolio__card-featured {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__card-desc {
+    position: absolute;
+    left: 0;
+    top: 190px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #ffffff;
+  }
+
+  &__heading {
+    margin-top: 22px;
+    margin-bottom: 10px;
+    font-family: SourceSansProBold;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  &__heading + p {
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-text-color;
+  }
+
+  &__card-featured {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 222px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 1);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .fas {
+    color: #ffffff;
+  }
+
+  .fa-plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -70px;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: $main-icon-color;
+    background-color: #ffffff;
+  }
+
+  .fa-eye {
+    margin-right: 5px;
+  }
+
+  .fa-clock {
+    margin-left: 10px;
+  }
+}
