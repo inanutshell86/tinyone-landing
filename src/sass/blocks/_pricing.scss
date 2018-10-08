@@ -1,0 +1,80 @@
+.pricing {
+  margin-bottom: 195px;
+  text-align: center;
+
+  &__heading {
+    margin-bottom: 22px;
+    font-family: SourceSansProBold;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &__heading + p {
+    margin-bottom: 45px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $main-text-color;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__figure {
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #ebebeb;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fas {
+    font-size: 48px;
+  }
+
+  .price {
+    position: relative;
+    margin-bottom: 8px;
+    font-family: SourceSansProBold;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .price::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 10px;
+    border-bottom: 2px solid $main-color;
+  }
+
+  .duration {
+    margin-bottom: 35px;
+    font-size: 16px;
+    color: $main-text-color;
+  }
+
+  .button--pricing {
+    &:hover,
+    &:active {
+      background-color: darken(#eaeaea, 5%);
+    }
+  }
+}
