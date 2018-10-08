@@ -1,0 +1,99 @@
+.contact {
+  margin-bottom: 78px;
+  text-align: center;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    position: relative;
+    width: 180px;
+    padding-top: 40px;
+  }
+
+  &__item::before {
+    width: 25px;
+    height: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 22px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__item--address::before {
+    content: "\f3c5";
+  }
+
+  &__item--email::before {
+    content: "\f0e0";
+  }
+
+  &__item--phone::before {
+    content: "\f098";
+  }
+
+  &__label {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  &__label + p {
+    font-size: 14px;
+    line-height: 16px;
+    color: $main-text-color;
+  }
+
+  .heading-secondary + p {
+    margin-bottom: 50px;
+  }
+}
+
+.form {
+
+  &__field-label {
+    font-size: 0;
+  }
+
+  &__field {
+    width: 480px;
+    height: 54px;
+    margin-bottom: 22px;
+    padding: 18px 15px;
+    border: 2px solid $main-color;
+    font-family: SourceSansPro;
+    font-size: 16px;
+    color: $main-text-color;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  &__field:focus {
+    border-color: #6b6b6b;
+  }
+
+  &__field--textarea {
+    height: 206px;
+    resize: none;
+  }
+
+  .button--submit {
+    width: 170px;
+    height: 51px;
+    border: none;
+    background-color: $main-color;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  .button--submit:hover {
+    background-color: #6b6b6b;
+  }
+}

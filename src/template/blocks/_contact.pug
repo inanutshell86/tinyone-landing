@@ -1,0 +1,24 @@
+section.contact
+  .container
+    h2.heading-secondary Keep in touch with us
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+    ul.contact__list
+      li.contact__item.contact__item--address
+        p.contact__label Address
+        p 66, Dang Van ngu, Dong Da, Ha noi, Vietnam
+      li.contact__item.contact__item--email
+        p.contact__label E-mail
+        p contact@halovietnam.com
+      li.contact__item.contact__item--phone
+        p.contact__label Phone
+        p +844 1234 56789
+    form.form(action="/" method="post")
+      .form__group
+        label.form__field-label(for="email") Email
+        input.form__field(name="email" type="email" id="email" placeholder="Email")
+      .form__group
+        label.form__field-label(for="name") Name
+        input.form__field(name="first_name" type="text" id="name" placeholder="Full name")
+      .form-group
+        textarea.form__field.form__field--textarea(placeholder="Message")
+      input.button.button--submit(type="submit" value="Send message")
