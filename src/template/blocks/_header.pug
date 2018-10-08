@@ -1,0 +1,38 @@
+header.site-header
+  .container
+    .wrapper
+      .site-header__top
+        .site-navigation
+          input#nav-toggle.site-navigation__checkbox(type="checkbox")
+          label.site-navigation__menu-toggle(for="nav-toggle")
+            span.sr-only Open main menu
+            span.fas.fa-bars(aria-hidden="true")
+          nav#main-menu.site-navigation__main-menu(role="navigation" aria-expanded="false" aria-label="Main menu")
+            label.site-navigation__menu-close(for="nav-toggle")
+              span.sr-only Close main menu
+              span.fas.fa-times(aria-hidden="true")
+            - var items = ['Products', 'About us', 'Contacts']
+            ul.site-navigation__list
+              each item in items
+                li.site-navigation__item
+                  a.site-navigation__link(href="#")= item
+          label.backdrop(for="nav-toggle" tabindex="-1" aria-hidden="true" hidden)
+        .logo
+          img.logo__image(src="../../images/logo.png" alt="company logo")
+          span.logo__text tinyone
+        .social-items
+          a.social-link(href="#") facebook
+            i.fab.fa-facebook-f
+          a.social-link(href="#") twitter
+            i.fab.fa-twitter
+          a.social-link(href="#") google plus
+            i.fab.fa-google-plus-g
+          a.social-link(href="#") pinterest
+            i.fab.fa-pinterest
+      .site-header__bottom
+        h1.heading-primary Inspire your inspiration
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+        a.button.button--large(href="#") get start
+        .scroller
+          a.scroller__link(href="#features")
+            i.fas.fa-long-arrow-alt-down
