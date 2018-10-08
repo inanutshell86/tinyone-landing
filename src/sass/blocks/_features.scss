@@ -1,0 +1,84 @@
+.features {
+  text-align: center;
+
+  &__list {
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  &__item {
+    position: relative;
+    width: 33.3333%;
+    padding-left: 90px;
+    margin-bottom: 82px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 50px;
+  }
+
+  &__item--tablet::before {
+    content: "\f3fa";
+  }
+
+  &__item--lemon::before {
+    content: "\f094";
+    font-weight: 400;
+  }
+
+  &__item--folder::before {
+    content: "\f07b";
+    font-weight: 400;
+  }
+
+  &__item--code::before {
+    content: "\f121";
+  }
+
+  &__item--envelope::before {
+    content: "\f0e0";
+    font-weight: 400;
+  }
+
+  &__item--bookmark::before {
+    content: "\f02e";
+    font-weight: 400;
+  }
+
+  &__heading {
+    margin-bottom: 12px;
+    font-family: SourceSansProBold;
+    font-size: 22px;
+    line-height: 24px;
+    color: $main-color;
+  }
+
+  &__heading + p {
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-text-color;
+  }
+}
+
+.heading-secondary {
+  margin-bottom: 22px;
+  font-family: SourceSansProBold;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.heading-secondary + p {
+  margin-bottom: 90px;
+  font-size: 20px;
+  line-height: 24px;
+  color: $main-text-color;
+}

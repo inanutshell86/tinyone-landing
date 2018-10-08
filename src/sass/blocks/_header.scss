@@ -1,8 +1,9 @@
 .site-header {
   position: relative;
   height: 100vh;
+  margin-bottom: 116px;
   background-color: #fcdb00;
-  background-image: url('../../images/background.png');
+  background-image: url("../../images/background.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -26,15 +27,13 @@
       font-size: 0;
     }
 
-
-
     .fab,
     .fa-bars {
-      color: $main-color;
+      color: $main-icon-color;
       transition: all 0.3s ease;
       &:hover,
       &:active {
-        color: lighten(#383838, 20%)
+        color: lighten(#383838, 20%);
       }
     }
 
@@ -49,7 +48,6 @@
     .social-link {
       padding: 8px 12px;
     }
-
   }
 
   &__bottom {
@@ -90,7 +88,7 @@
     list-style: none;
     margin: 0;
     padding: 2.5em 0 0;
-    box-shadow: -8px 0 8px rgba(0,0,0,0.5);
+    box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
     min-height: 100%;
     width: 200px;
     background-color: #1a1a1a;
@@ -128,7 +126,7 @@
   .site-navigation__main-menu[aria-expanded="true"] {
     left: 0;
     outline: none;
-    box-shadow: 3px 0 12px rgba(0,0,0,0.25);
+    box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
   }
 
   #nav-toggle:checked ~ .site-navigation__main-menu label,
@@ -153,7 +151,7 @@
     height: 100%;
     z-index: 998;
     background: #000000;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     cursor: default;
   }
 
@@ -174,7 +172,7 @@
     font-family: SourceSansProBold;
     font-size: 20px;
     line-height: 30px;
-    color: $main-color;
+    color: $main-icon-color;
   }
 }
 
@@ -231,7 +229,7 @@
   bottom: 54px;
   animation-name: scroll;
   animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(0.15,0.41,0.69,0.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 
   &__link {
@@ -248,7 +246,15 @@
 }
 
 @keyframes scroll {
-  0% {opacity:0;}
-  20% {transform:translateY(0); opacity:1;}
-  100% {transform:translateY(54px); opacity:0;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(54px);
+    opacity: 0;
+  }
 }
