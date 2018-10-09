@@ -1,7 +1,7 @@
 .site-header {
   position: relative;
   height: 100vh;
-  margin-bottom: 116px;
+  margin-bottom: 112px;
   background-color: #fcdb00;
   background-image: url("../../images/background.png");
   background-size: cover;
@@ -23,7 +23,7 @@
     .social-items {
       display: flex;
       justify-content: space-between;
-      min-width: 140px;
+      min-width: 150px;
       font-size: 0;
     }
 
@@ -37,16 +37,9 @@
       }
     }
 
-    .fab {
-      font-size: 22px;
-    }
-
+    .fab,
     .fa-bars {
-      font-size: 32px;
-    }
-
-    .social-link {
-      padding: 8px 12px;
+      font-size: 22px;
     }
   }
 
@@ -62,15 +55,14 @@
 }
 
 .site-navigation {
+  min-width: 150px;
+
   &__checkbox {
     display: none;
   }
 
   &__menu-toggle {
     display: inline-block;
-    padding: 0.75em 15px;
-    line-height: 1em;
-    font-size: 1em;
     color: #333333;
     cursor: pointer;
   }
@@ -170,8 +162,8 @@
   &__text {
     margin-left: 10px;
     font-family: SourceSansProBold;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 1;
     color: $main-icon-color;
   }
 }
@@ -212,11 +204,10 @@
     height: 56px;
     font-size: 22px;
     padding: 13px 20px;
-    background-color: #fcdb00;
 
     &:hover,
     &:active {
-      background-color: darken(#fcdb00, 5%);
+      background-color: #b6b6b6;
     }
   }
 }

@@ -70,14 +70,16 @@
 }
 
 .heading-secondary {
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   font-family: SourceSansProBold;
   font-size: 32px;
   line-height: 1;
 }
 
 .heading-secondary + p {
-  margin-bottom: 90px;
+  max-width: 716px;
+  margin: 0 auto;
+  margin-bottom: 85px;
   font-size: 20px;
   line-height: 24px;
   color: $main-text-color;

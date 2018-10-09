@@ -1,5 +1,5 @@
 .pricing {
-  margin-bottom: 195px;
+  margin-bottom: 191px;
   text-align: center;
 
   &__heading {
@@ -10,7 +10,7 @@
   }
 
   &__heading + p {
-    margin-bottom: 45px;
+    margin-bottom: 27px;
     font-size: 14px;
     line-height: 24px;
     color: $main-text-color;
@@ -30,7 +30,7 @@
   }
 
   &__figure {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
   }
 
   &__icon {
@@ -66,7 +66,7 @@
   }
 
   .duration {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     font-size: 16px;
     color: $main-text-color;
   }

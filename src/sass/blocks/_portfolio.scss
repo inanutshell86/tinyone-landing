@@ -41,8 +41,8 @@
   }
 
   &__heading {
-    margin-top: 22px;
-    margin-bottom: 10px;
+    margin-top: 13px;
+    margin-bottom: 5px;
     font-family: SourceSansProBold;
     font-size: 22px;
     line-height: 24px;
@@ -102,5 +102,9 @@
 
   .fa-clock {
     margin-left: 10px;
+  }
+
+  .heading-secondary + p {
+    margin-bottom: 67px;
   }
 }
