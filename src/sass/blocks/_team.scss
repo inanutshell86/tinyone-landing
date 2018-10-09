@@ -12,6 +12,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media all and (max-width: 980px) {
+      justify-content: space-around;
+    }
   }
 
   &__item {
@@ -19,6 +23,11 @@
     width: 235px;
     display: flex;
     flex-direction: column;
+
+    @media all and (max-width: 980px) {
+      width: 50%;
+      margin-bottom: 20px;
+    }
   }
 
   &__figure {

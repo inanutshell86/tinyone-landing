@@ -1,5 +1,5 @@
 .pricing {
-  margin-bottom: 191px;
+  margin-bottom: 162px;
   text-align: center;
 
   &__heading {
@@ -24,9 +24,14 @@
 
   &__item {
     width: 180px;
+    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media all and (max-width: 600px) {
+      width: 60%;
+    }
   }
 
   &__figure {

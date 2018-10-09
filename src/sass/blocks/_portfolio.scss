@@ -6,6 +6,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media all and (max-width: 950px) {
+      justify-content: space-around;
+    }
   }
 
   &__item {

@@ -7,12 +7,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media all and (max-width: 680px) {
+      justify-content: space-between;
+    }
   }
 
   &__item {
     position: relative;
     padding-top: 64px;
     width: 160px;
+
+    @media all and (max-width: 680px) {
+      width: 50%;
+      margin-bottom: 20px;
+    }
   }
 
   &__item::before {
@@ -88,6 +97,14 @@
     font-size: 20px;
     line-height: 24px;
     color: $main-text-color;
+
+    @media all and (max-width: 650px) {
+      max-width: 320px;
+    }
+
+    @media all and (max-width: 520px) {
+      max-width: 200px;
+    }
   }
 
   &__quote::before,
