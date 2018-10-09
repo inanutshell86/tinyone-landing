@@ -36,6 +36,16 @@
 
   &__figure {
     margin-bottom: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__figure:hover .pricing__icon {
+    background-color: $main-color;
+  }
+
+  &__figure:hover .fas {
+    color: #ffffff;
   }
 
   &__icon {
@@ -46,6 +56,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
   }
 
   .fas {
